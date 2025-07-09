@@ -1,0 +1,102 @@
+.sidebar {
+  background: #f8f9fa;
+  border-right: 1px solid #e9ecef;
+  width: 250px;
+  min-width: 180px;
+  max-width: 340px;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem 1.1rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.sidebar-title {
+  color: #424242;
+  font-size: 1.16rem;
+  font-weight: 700;
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+}
+
+.sidebar-add-btn {
+  background: #fbc02d;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  height: 2.1rem;
+  width: 2.1rem;
+  margin-left: .4rem;
+  transition: background .2s;
+  box-shadow: 0 1px 3px rgba(251,192,45,0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar-add-btn:hover:enabled {
+  background: #1976d2;
+}
+
+.sidebar-list {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-empty {
+  margin: 1.5rem 0 0 1rem;
+  color: #888;
+  font-size: 0.94rem;
+}
+
+.sidebar-note-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  background: none;
+  padding: 1rem 1.2rem 0.6rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 1px solid #f3f3f3;
+  transition: background .13s;
+  font-size: 1.06rem;
+}
+
+.sidebar-note-btn.selected,
+.sidebar-note-btn:focus {
+  background: #e3eefc;
+  border-left: 5px solid #1976d2;
+  color: #1976d2;
+  font-weight: 500;
+}
+
+.sidebar-note-title {
+  font-size: 1.04rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 0.19rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.sidebar-note-upd {
+  font-size: 0.84rem;
+  color: #868686;
+}
